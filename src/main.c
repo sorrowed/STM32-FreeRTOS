@@ -4,6 +4,8 @@
 
 #include "Types.h"
 
+#include <cross_studio_io.h>
+
 static void MainTask1( void *pvParameters );
 static void MainTask2( void *pvParameters );
 
@@ -24,7 +26,7 @@ void MainTask1( void *pvParameters )
   while( true )
   {
     vTaskDelay( 500 );
-    printf( "task 1" );
+    debug_printf( "task 1\n" );
     vTaskDelay( 500 );
   }
 }
@@ -35,7 +37,7 @@ void MainTask2( void *pvParameters )
   while( true )
   {
     vTaskDelay( 500 );
-    printf( "task 2" );
+    debug_printf( "task 2\n" );
     vTaskDelay( 500 );
   }
 }
