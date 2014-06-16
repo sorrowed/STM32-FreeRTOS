@@ -1,66 +1,66 @@
 /*
-    FreeRTOS V7.6.0 - Copyright (C) 2013 Real Time Engineers Ltd.
-    All rights reserved
+	FreeRTOS V7.6.0 - Copyright (C) 2013 Real Time Engineers Ltd.
+	All rights reserved
 
-    VISIT http://www.FreeRTOS.org TO ENSURE YOU ARE USING THE LATEST VERSION.
+	VISIT http://www.FreeRTOS.org TO ENSURE YOU ARE USING THE LATEST VERSION.
 
-    ***************************************************************************
-     *                                                                       *
-     *    FreeRTOS provides completely free yet professionally developed,    *
-     *    robust, strictly quality controlled, supported, and cross          *
-     *    platform software that has become a de facto standard.             *
-     *                                                                       *
-     *    Help yourself get started quickly and support the FreeRTOS         *
-     *    project by purchasing a FreeRTOS tutorial book, reference          *
-     *    manual, or both from: http://www.FreeRTOS.org/Documentation        *
-     *                                                                       *
-     *    Thank you!                                                         *
-     *                                                                       *
-    ***************************************************************************
+	***************************************************************************
+	 *										*
+	 *	 FreeRTOS provides completely free yet professionally developed,	 *
+	 *	 robust, strictly quality controlled, supported, and cross		   *
+	 *	 platform software that has become a de facto standard.		  *
+	 *										*
+	 *	 Help yourself get started quickly and support the FreeRTOS		  *
+	 *	 project by purchasing a FreeRTOS tutorial book, reference		   *
+	 *	 manual, or both from: http://www.FreeRTOS.org/Documentation		 *
+	 *										*
+	 *	 Thank you!								  *
+	 *										*
+	***************************************************************************
 
-    This file is part of the FreeRTOS distribution.
+	This file is part of the FreeRTOS distribution.
 
-    FreeRTOS is free software; you can redistribute it and/or modify it under
-    the terms of the GNU General Public License (version 2) as published by the
-    Free Software Foundation >>!AND MODIFIED BY!<< the FreeRTOS exception.
+	FreeRTOS is free software; you can redistribute it and/or modify it under
+	the terms of the GNU General Public License (version 2) as published by the
+	Free Software Foundation >>!AND MODIFIED BY!<< the FreeRTOS exception.
 
-    >>! NOTE: The modification to the GPL is included to allow you to distribute
-    >>! a combined work that includes FreeRTOS without being obliged to provide
-    >>! the source code for proprietary components outside of the FreeRTOS
-    >>! kernel.
+	>>! NOTE: The modification to the GPL is included to allow you to distribute
+	>>! a combined work that includes FreeRTOS without being obliged to provide
+	>>! the source code for proprietary components outside of the FreeRTOS
+	>>! kernel.
 
-    FreeRTOS is distributed in the hope that it will be useful, but WITHOUT ANY
-    WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-    FOR A PARTICULAR PURPOSE.  Full license text is available from the following
-    link: http://www.freertos.org/a00114.html
+	FreeRTOS is distributed in the hope that it will be useful, but WITHOUT ANY
+	WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+	FOR A PARTICULAR PURPOSE.  Full license text is available from the following
+	link: http://www.freertos.org/a00114.html
 
-    1 tab == 4 spaces!
+	1 tab == 4 spaces!
 
-    ***************************************************************************
-     *                                                                       *
-     *    Having a problem?  Start by reading the FAQ "My application does   *
-     *    not run, what could be wrong?"                                     *
-     *                                                                       *
-     *    http://www.FreeRTOS.org/FAQHelp.html                               *
-     *                                                                       *
-    ***************************************************************************
+	***************************************************************************
+	 *										*
+	 *	 Having a problem?  Start by reading the FAQ "My application does	*
+	 *	 not run, what could be wrong?"					  *
+	 *										*
+	 *	 http://www.FreeRTOS.org/FAQHelp.html					*
+	 *										*
+	***************************************************************************
 
-    http://www.FreeRTOS.org - Documentation, books, training, latest versions,
-    license and Real Time Engineers Ltd. contact details.
+	http://www.FreeRTOS.org - Documentation, books, training, latest versions,
+	license and Real Time Engineers Ltd. contact details.
 
-    http://www.FreeRTOS.org/plus - A selection of FreeRTOS ecosystem products,
-    including FreeRTOS+Trace - an indispensable productivity tool, a DOS
-    compatible FAT file system, and our tiny thread aware UDP/IP stack.
+	http://www.FreeRTOS.org/plus - A selection of FreeRTOS ecosystem products,
+	including FreeRTOS+Trace - an indispensable productivity tool, a DOS
+	compatible FAT file system, and our tiny thread aware UDP/IP stack.
 
-    http://www.OpenRTOS.com - Real Time Engineers ltd license FreeRTOS to High
-    Integrity Systems to sell under the OpenRTOS brand.  Low cost OpenRTOS
-    licenses offer ticketed support, indemnification and middleware.
+	http://www.OpenRTOS.com - Real Time Engineers ltd license FreeRTOS to High
+	Integrity Systems to sell under the OpenRTOS brand.  Low cost OpenRTOS
+	licenses offer ticketed support, indemnification and middleware.
 
-    http://www.SafeRTOS.com - High Integrity Systems also provide a safety
-    engineered and independently SIL3 certified version for use in safety and
-    mission critical applications that require provable dependability.
+	http://www.SafeRTOS.com - High Integrity Systems also provide a safety
+	engineered and independently SIL3 certified version for use in safety and
+	mission critical applications that require provable dependability.
 
-    1 tab == 4 spaces!
+	1 tab == 4 spaces!
 */
 
 /*-----------------------------------------------------------
@@ -92,7 +92,7 @@ FreeRTOS.org versions prior to V4.4.0 did not include this definition. */
 #define portNVIC_SYSTICK_INT_BIT			( 1UL << 1UL )
 #define portNVIC_SYSTICK_ENABLE_BIT			( 1UL << 0UL )
 #define portNVIC_SYSTICK_COUNT_FLAG_BIT		( 1UL << 16UL )
-#define portNVIC_PENDSVCLEAR_BIT 			( 1UL << 27UL )
+#define portNVIC_PENDSVCLEAR_BIT			( 1UL << 27UL )
 #define portNVIC_PEND_SYSTICK_CLEAR_BIT		( 1UL << 25UL )
 
 #define portNVIC_PENDSV_PRI					( ( ( unsigned long ) configKERNEL_INTERRUPT_PRIORITY ) << 16UL )
@@ -100,7 +100,7 @@ FreeRTOS.org versions prior to V4.4.0 did not include this definition. */
 
 /* Constants required to check the validity of an interrupt priority. */
 #define portFIRST_USER_INTERRUPT_NUMBER		( 16 )
-#define portNVIC_IP_REGISTERS_OFFSET_16 	( 0xE000E3F0 )
+#define portNVIC_IP_REGISTERS_OFFSET_16	( 0xE000E3F0 )
 #define portAIRCR_REG						( * ( ( volatile unsigned long * ) 0xE000ED0C ) )
 #define portMAX_8_BIT_VALUE					( ( unsigned char ) 0xff )
 #define portTOP_BIT_OF_BYTE					( ( unsigned char ) 0x80 )
@@ -138,6 +138,10 @@ static unsigned portBASE_TYPE uxCriticalNesting = 0xaaaaaaaa;
  * generate the tick interrupt.
  */
 void vPortSetupTimerInterrupt( void );
+
+#define xPortPendSVHandler	PendSV_Handler
+#define vPortSVCHandler		SVC_Handler
+#define xPortSysTickHandler	SysTick_Handler
 
 /*
  * Exception handlers.
@@ -237,7 +241,7 @@ void vPortSVCHandler( void )
 					"	ldr r0, [r1]					\n" /* The first item in pxCurrentTCB is the task top of stack. */
 					"	ldmia r0!, {r4-r11}				\n" /* Pop the registers that are not automatically saved on exception entry and the critical nesting count. */
 					"	msr psp, r0						\n" /* Restore the task stack pointer. */
-					"	mov r0, #0 						\n"
+					"	mov r0, #0						\n"
 					"	msr	basepri, r0					\n"
 					"	orr r14, #0xd					\n"
 					"	bx r14							\n"
@@ -251,9 +255,9 @@ void vPortSVCHandler( void )
 static void prvPortStartFirstTask( void )
 {
 	__asm volatile(
-					" ldr r0, =0xE000ED08 	\n" /* Use the NVIC offset register to locate the stack. */
-					" ldr r0, [r0] 			\n"
-					" ldr r0, [r0] 			\n"
+					" ldr r0, =0xE000ED08	\n" /* Use the NVIC offset register to locate the stack. */
+					" ldr r0, [r0]			\n"
+					" ldr r0, [r0]			\n"
 					" msr msp, r0			\n" /* Set the msp back to the start of the stack. */
 					" cpsie i				\n" /* Globally enable interrupts. */
 					" svc 0					\n" /* System call to start first task. */

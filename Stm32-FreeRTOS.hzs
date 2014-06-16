@@ -1,11 +1,7 @@
 <!DOCTYPE CrossStudio_for_ARM_Session_File>
 <session>
  <Bookmarks/>
- <Breakpoints>
-  <BreakpointListItem line="27" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="4" counter="0" isFunctionBreakpoint="false" filename="/home/tom/Projects/Stm32-FreeRTOS/src/main.c" expression="" />
-  <BreakpointListItem line="38" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="4" counter="0" isFunctionBreakpoint="false" filename="/home/tom/Projects/Stm32-FreeRTOS/src/main.c" expression="" />
-  <BreakpointListItem line="234" action="" hardwareBreakpoint="" trigger="" useHWbreakpoint="false" group="Breakpoints" type="Breakpoint" state="4" counter="0" isFunctionBreakpoint="false" filename="/home/tom/Projects/Stm32-FreeRTOS/portable/port.c" expression="" />
- </Breakpoints>
+ <Breakpoints/>
  <ExecutionProfileWindow/>
  <Memory1>
   <MemoryWindow autoEvaluate="0" addressText="" numColumns="8" sizeText="" dataSize="1" radix="16" name="Stm32-FreeRTOS" addressSpace="" />
@@ -23,11 +19,14 @@
   <ProjectSessionItem path="Stm32-FreeRTOS" name="unnamed" />
   <ProjectSessionItem path="Stm32-FreeRTOS;Stm32-FreeRTOS" name="unnamed" />
   <ProjectSessionItem path="Stm32-FreeRTOS;Stm32-FreeRTOS;Source Files" name="unnamed" />
+  <ProjectSessionItem path="Stm32-FreeRTOS;Stm32-FreeRTOS;Source Files;FreeRTOS" name="unnamed" />
+  <ProjectSessionItem path="Stm32-FreeRTOS;Stm32-FreeRTOS;Source Files;FreeRTOS;portable" name="unnamed" />
+  <ProjectSessionItem path="Stm32-FreeRTOS;Stm32-FreeRTOS;Source Files;FreeRTOS;src" name="unnamed" />
   <ProjectSessionItem path="Stm32-FreeRTOS;Stm32-FreeRTOS;Source Files;src" name="unnamed" />
   <ProjectSessionItem path="Stm32-FreeRTOS;Stm32-FreeRTOS;System Files" name="unnamed" />
  </Project>
  <Register1>
-  <RegisterWindow openNodes="CPU - Current Context" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="CPU - Current Context;CPU" decimalNodes="" octalNodes="" asciiNodes="" name="Stm32-FreeRTOS" />
+  <RegisterWindow openNodes="CPU - Current Context;SysTick" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="CPU - Current Context;CPU;SysTick" decimalNodes="" octalNodes="" asciiNodes="" name="Stm32-FreeRTOS" />
  </Register1>
  <Register2>
   <RegisterWindow openNodes="CPU - Current Context" binaryNodes="" hiddenNodes="" unsignedNodes="" visibleGroups="CPU - Current Context;CPU" decimalNodes="" octalNodes="" asciiNodes="" name="Stm32-FreeRTOS" />
@@ -55,7 +54,10 @@
   <Watches active="0" update="Never" />
  </Watch4>
  <Files>
-  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="/home/tom/Projects/STM32-FreeRTOS/src/main.c" y="61" path="/home/tom/Projects/STM32-FreeRTOS/src/main.c" left="0" selected="1" name="unnamed" top="12" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="/home/tom/Projects/STM32-FreeRTOS/src/main.c" y="12" path="/home/tom/Projects/STM32-FreeRTOS/src/main.c" left="0" selected="0" name="unnamed" top="0" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="23" debugPath="/home/tom/.rowley_associates_limited/CrossWorks for ARM/packages/targets/STM32/STM32_Startup.s" y="94" path="/home/tom/.rowley_associates_limited/CrossWorks for ARM/packages/targets/STM32/STM32_Startup.s" left="0" selected="0" name="unnamed" top="59" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="0" debugPath="/home/tom/Projects/STM32-FreeRTOS/FreeRTOS/src/tasks.c" y="637" path="/home/tom/Projects/STM32-FreeRTOS/FreeRTOS/src/tasks.c" left="0" selected="0" name="unnamed" top="606" />
+  <SessionOpenFile useTextEdit="1" useBinaryEdit="0" codecName="Latin1" x="16" debugPath="/home/tom/Projects/STM32-FreeRTOS/FreeRTOS/portable/port.c" y="142" path="/home/tom/Projects/STM32-FreeRTOS/FreeRTOS/portable/port.c" left="0" selected="1" name="unnamed" top="123" />
  </Files>
  <ARMCrossStudioWindow activeProject="Stm32-FreeRTOS" autoConnectTarget="Olimex ARM-USB-OCD" debugSearchFileMap="" fileDialogInitialDirectory="/home/tom/Projects/Stm32-FreeRTOS/STM32F10x_StdPeriph_Driver/src" fileDialogDefaultFilter="*.c" autoConnectCapabilities="266111" debugSearchPath="" buildConfiguration="THUMB Debug" />
 </session>
